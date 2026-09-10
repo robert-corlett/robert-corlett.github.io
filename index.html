@@ -23,11 +23,18 @@
     <script type="module">
       import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
+      let kitties = [
+        "ginger-cat.lottie",
+        "sleepy-kitty.lottie" 
+      ];
+      
+      let kitty = kitties[Math.floor(Math.random() * kitties.length)];
+
       new DotLottie({
         autoplay: true,
         loop: true,
         canvas: document.getElementById("cat"),
-        src: "ginger-cat.lottie", // replace with your .lottie or .json file URL
+        src: kitty, 
       });
     </script>
   </body>
