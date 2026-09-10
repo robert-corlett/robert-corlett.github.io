@@ -36,11 +36,12 @@
       const cat = new DotLottie({
         autoplay: true,
         loop: true,
+        layout: {
+          fit: "none"
+        }
         canvas: document.getElementById("cat"),
         src: kitty, 
       });
-
-      console.log(kitty + " -> \n animationSize: " + cat.animationSize() )
 
       // press any key to change the kitty.
       document.addEventListener("keydown", () => {
@@ -51,9 +52,10 @@
           src: kitty,
           loop: true,
           autoplay: true,
+          layout: {
+            fit: "none"
+          }
         });
-
-        console.log(kitty + " -> \n animationSize: " + cat.animationSize() )
 
       });
 
