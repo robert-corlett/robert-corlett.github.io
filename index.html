@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Lottie Animation</title>
+    <style>
+    	#canvas {
+    		position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		margin-right: -50%;
+    		transform: translate(-50%, -50%);
+    	}
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="150" height="150"></canvas>
+    <script type="module">
+      import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+
+      new DotLottie({
+        autoplay: true,
+        loop: true,
+        canvas: document.getElementById("canvas"),
+        src: "https://lottie.host/8fcad3ad-989b-4456-bf8a-4547f80b9859/Gfk4ZGc4Vl.lottie", // replace with your .lottie or .json file URL
+      });
+    </script>
+  </body>
+</html>
