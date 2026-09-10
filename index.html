@@ -30,24 +30,29 @@
       
       let kitty = kitties[Math.floor(Math.random() * kitties.length)];
 
-      new DotLottie({
+      const cat = new DotLottie({
         autoplay: true,
         loop: true,
         canvas: document.getElementById("cat"),
         src: kitty, 
       });
+      new DotLottie({
+        
+      });
 
       // press any key to change the kitty.
       document.addEventListener("keydown", () => {
-         // choose a new kitty from the kittens array but exclude the current kitty: 
+        // choose a new kitty from the kittens array but exclude the current kitty: 
         kitty = kitties.filter((k) => k !== kitty)[Math.floor(Math.random() * (kitties.length - 1))];
-        new DotLottie({
-          autoplay: true,
-          loop: true,
-          canvas: document.getElementById("cat"),
+        
+        cat.load({
           src: kitty,
+          loop: true,
+          autoplay: true,
         });
+
       });
+      
     </script>
   </body>
 </html>
