@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Lottie Animation</title>
+    <title>corlett.cc</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAQEBACMjIwADAwMACQkJAAQEBAAFBQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAEAAAAAAAAAAMAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAABRAAEAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAADwDwAA8AcAAPALAADwDQAA+B0AAPg9AAD4PQAA+D0AAPAdAADwHwAA8B8AAPAfAADznwAA998AAP//AAD//wAA" rel="icon" type="image/x-icon">
     <style>
-    	#canvas {
+      html {
+        background-color: #a6e3de;
+      }
+    	#cat {
     		position: absolute;
     		top: 50%;
     		left: 50%;
@@ -15,15 +19,15 @@
     </style>
   </head>
   <body>
-    <canvas id="canvas" width="150" height="150"></canvas>
+    <canvas id="cat" width="150" height="150"></canvas>
     <script type="module">
       import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
       new DotLottie({
         autoplay: true,
         loop: true,
-        canvas: document.getElementById("canvas"),
-        src: "https://lottie.host/8fcad3ad-989b-4456-bf8a-4547f80b9859/Gfk4ZGc4Vl.lottie", // replace with your .lottie or .json file URL
+        canvas: document.getElementById("cat"),
+        src: "ginger-cat.lottie", // replace with your .lottie or .json file URL
       });
     </script>
   </body>
